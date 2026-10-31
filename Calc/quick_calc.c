@@ -9,12 +9,12 @@ int division(int x, int y);
 int main()
 {
   int choice;
-  printf("Please select one of the following options: \n"
-            "1. Addition \n"
+  printf(   "1. Addition \n"
             "2. Subtraction \n"
             "3. Multiplication \n"
-            "4. Division ");
-  scanf("%i", choice);
+            "4. Division \n"
+            "Please select your option: ");
+  scanf("%i", &choice);
     
   int num1;
   printf("Enter the first number: ");
@@ -26,7 +26,7 @@ int main()
   // Will now create conditionals for each operation
 
   if (choice > 5 && choice < 0){
-       fpritntf(stderr, "Invalid Input");
+       fprintf(stderr, "Invalid Input");
   }
   else if(choice == 1){
       printf("%i", addition(num1, num2));
@@ -40,4 +40,18 @@ int main()
   else{
     printf("%i", division(num1, num2));
   }
+  return 0;
+}
+
+int addition(int x, int y){
+  return x + y;
+}
+int subtraction(int x, int y){
+  return x - y;
+}
+int multiplication(int x, int y){
+  return x * y;
+}
+int division(int x, int y){
+  return x/y;
 }
