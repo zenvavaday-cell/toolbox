@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h> 
+#include <math.h>
 
 long ci(float x, float y, float z); // Prototype 1
 long si(float x, float y, float z); // Prototype 2
@@ -7,9 +7,9 @@ long si(float x, float y, float z); // Prototype 2
 int main()
 {
   int choice;
-  printf("Please select one of the following options: \n" 
+  printf("Please select one of the following options: \n"
          "1. Calculate Simple Interest. \n"
-         "2. Calculate Compound Interest. \n" 
+         "2. Calculate Compound Interest. \n"
          "Your choice: ");
   scanf("%d", &choice);
 
@@ -45,6 +45,3 @@ long ci(float x, float y, float z){
   float CI = amount - x;
   printf("%f", CI);
 };
-
-
-
